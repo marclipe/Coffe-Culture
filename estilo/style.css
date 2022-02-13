@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    /*Fonts*/
+    --font-pacifico: 'Pacifico', cursive;
+    --font-Ubuntu: 'Ubuntu Condensed', sans-serif;
+    /*Colors Paleta*/
+    --color1: #D1A18A; 
+    --color2: #995636; 
+    --color3: #856658; 
+    --color4: #D1764B; 
+    --color5: #523F36; 
+    /*Colors clear*/
+    --color-white: #FFF2E7; 
+    --shadow-button: 4px 5px 4px rgba(0, 0, 0, 0.25); 
+
+    /*measures*/
+    --border-top: 0.4px solid #FFF2E7; 
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, var(--color5) 16.62%, var(--color4) 85.16%);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+img.cabecalho-imagem {
+    height: 72px;
+}
+
+nav.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+}
+
+a.cabecalho-menu-item {
+    font-family: var(--font-Ubuntu);
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/*New animation in menu items*/
+a.cabecalho-menu-item:hover {
+    background-color: #523F36;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+main.conteudo {
+    margin-bottom: 48px;
+    border-top: var(--border-top);
+}
+
+section.conteudo-pricipal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+div.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+h1.conteudo-principal-escrito-titulo {
+    font-family: var(--font-pacifico);
+    font-weight: 400;
+    font-size: 55px;
+    color: var(--color-white);
+    text-shadow: rgba(0, 0, 0, 0.541);
+}
+
+h2.conteudo-principal-escrito-subtitulo {
+    font-family: var(--font-Ubuntu);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color4);
+    text-shadow: rgba(0, 0, 0, 0.37);
+}
+
+button.conteudo-principal-escrito-botao {
+    background-color: var(--color4);
+    width: 180px;
+    height: 70px;
+    border: none;
+    box-shadow: var(--shadow-button);
+    border-radius: 20px;
+    font-family: var(--font-Ubuntu);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color5);
+}
+
+.conteudo-principal-escrito-botao:hover {
+    background-color: var(--color1);
+    cursor: pointer;
+}
+
+img.conteudo-principal-imagem {
+    height: 430px;
+}
+
+section.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+h3.conteudo-secundario-titulo {
+    border-top: var(--border-top);
+    padding: 48px;
+    font-family: var(--font-pacifico);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-white);
+    margin-bottom: 16px;
+}
+
+p.conteudo-secundario-paragrafo {
+    font-family: var(--font-Ubuntu);
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--color-white);
+}
+
+footer.rodape {
+    padding: 32px;
+    border-top: var(--border-top);
+}
+
+p.rodape-paragrafo {
+    color: var(--color-white);
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--font-Ubuntu);
+}
